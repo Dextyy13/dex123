@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ww.css">
+    <title>Login and Registration</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <div class="form" id="login-form">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <button type="button">Login</button>
+                <div class="toggle-form">
+                    <button onclick="toggleForm('register-form')">Don't have an account? Register here.</button>
+                </div>
+            </div>
+
+            <div class="form" id="register-form">
+                <h2>Register</h2>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <button type="button">Register</button>
+                <div class="toggle-form">
+                    <button onclick="toggleForm('login-form')">Already have an account? Login here.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
